@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="49810" started-at="2017-08-19T16:18:45Z" finished-at="2017-08-19T16:19:35Z">
+    <groups>
+      <group name="qa">
+        <method signature="Script_Login.invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="invalidLogin" class="projectScripts.Script_Login"/>
+        <method signature="Script_Login.validLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="validLogin" class="projectScripts.Script_Login"/>
+        <method signature="Script_Search.validSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="validSearch" class="projectScripts.Script_Search"/>
+      </group> <!-- qa -->
+      <group name="prod">
+        <method signature="Script_Login.validLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="validLogin" class="projectScripts.Script_Login"/>
+        <method signature="Script_Search.invalidSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="invalidSearch" class="projectScripts.Script_Search"/>
+      </group> <!-- prod -->
+      <group name="uat">
+        <method signature="Script_Login.invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="invalidLogin" class="projectScripts.Script_Login"/>
+        <method signature="Script_Login.validLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="validLogin" class="projectScripts.Script_Login"/>
+      </group> <!-- uat -->
+    </groups>
+    <test name="Testie" duration-ms="49810" started-at="2017-08-19T16:18:45Z" finished-at="2017-08-19T16:19:35Z">
+      <class name="projectScripts.Script_Search">
+        <test-method status="PASS" signature="launchAPP(java.lang.String)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="launchAPP" is-config="true" duration-ms="5521" started-at="2017-08-19T21:49:18Z" finished-at="2017-08-19T21:49:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="invalidSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="invalidSearch" duration-ms="808" started-at="2017-08-19T21:49:24Z" data-provider="invalidSearch" finished-at="2017-08-19T21:49:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute=Y, Message=Sorry..'abcdf' does not match any product on Rediff Books., ScriptName=invalidSearch, Searchoption=abcdf, ID=GB_08}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="tearDown" is-config="true" duration-ms="846" started-at="2017-08-19T21:49:24Z" finished-at="2017-08-19T21:49:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidSearch status=SUCCESS method=Script_Search.invalidSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchAPP(java.lang.String)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="launchAPP" is-config="true" duration-ms="5244" started-at="2017-08-19T21:49:25Z" finished-at="2017-08-19T21:49:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="validSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="validSearch" duration-ms="3659" started-at="2017-08-19T21:49:31Z" data-provider="validSearchCount" finished-at="2017-08-19T21:49:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute=Y, Message=45.0, ScriptName=validateSearchcount, Searchoption=Ways, ID=GB_09}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSearch -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:projectScripts.Script_Search@c4c815]" name="tearDown" is-config="true" duration-ms="1052" started-at="2017-08-19T21:49:34Z" finished-at="2017-08-19T21:49:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validSearch status=SUCCESS method=Script_Search.validSearch(java.util.Map)[pri:0, instance:projectScripts.Script_Search@c4c815] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- projectScripts.Script_Search -->
+      <class name="projectScripts.Script_Login">
+        <test-method status="PASS" signature="initSetup()[pri:0, instance:projectScripts.Script_Login@f4468b]" name="initSetup" is-config="true" duration-ms="219" started-at="2017-08-19T21:48:45Z" finished-at="2017-08-19T21:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method status="PASS" signature="launchAPP(java.lang.String)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="launchAPP" is-config="true" duration-ms="6932" started-at="2017-08-19T21:48:46Z" finished-at="2017-08-19T21:48:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="invalidLogin" duration-ms="3189" started-at="2017-08-19T21:48:53Z" data-provider="invalidLogin" finished-at="2017-08-19T21:48:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute=y, Message=Sorry we were unable to complete this step because :, Username=dksjhf, ScriptName=invalidLogin, ID=GB_01, Password=learn123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="tearDown" is-config="true" duration-ms="2362" started-at="2017-08-19T21:48:56Z" finished-at="2017-08-19T21:48:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=SUCCESS method=Script_Login.invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchAPP(java.lang.String)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="launchAPP" is-config="true" duration-ms="5475" started-at="2017-08-19T21:48:59Z" finished-at="2017-08-19T21:49:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="invalidLogin" duration-ms="2804" started-at="2017-08-19T21:49:04Z" data-provider="invalidLogin" finished-at="2017-08-19T21:49:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute=y, Message=Sorry we were unable to complete this step because :, Username=, ScriptName=invalidLogin, ID=GB_06, Password=}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="tearDown" is-config="true" duration-ms="859" started-at="2017-08-19T21:49:07Z" finished-at="2017-08-19T21:49:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=SUCCESS method=Script_Login.invalidLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchAPP(java.lang.String)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="launchAPP" is-config="true" duration-ms="5819" started-at="2017-08-19T21:49:08Z" finished-at="2017-08-19T21:49:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ch]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchAPP -->
+        <test-method status="PASS" signature="validLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="validLogin" duration-ms="3605" started-at="2017-08-19T21:49:14Z" data-provider="validLogin" finished-at="2017-08-19T21:49:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Order=1.0, Execute=y, Message=Hi qtpworld2008 g, Username=qtpworld2008@gmail.com, ScriptName=validLogin, ID=GB_07, Password=learn123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:projectScripts.Script_Login@f4468b]" name="tearDown" is-config="true" duration-ms="838" started-at="2017-08-19T21:49:17Z" finished-at="2017-08-19T21:49:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=Script_Login.validLogin(java.util.Map)[pri:0, instance:projectScripts.Script_Login@f4468b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- projectScripts.Script_Login -->
+    </test> <!-- Testie -->
+  </suite> <!-- Suite -->
+</testng-results>
